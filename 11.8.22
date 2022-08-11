@@ -1,0 +1,17 @@
+int arrangeCoins(int n)
+{
+    int Looper,Number;
+    Number = n;
+    for(Looper=1;Looper<=n;Looper++)
+    {
+        if(Looper>Number)
+        {
+            break;
+        }
+        else
+        {
+            Number -= Looper;
+        }
+    }
+    return Looper-1;
+}
